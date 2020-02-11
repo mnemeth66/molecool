@@ -3,8 +3,12 @@ This is the start of testing.txt
 **************************************
 
 I added this file from a new clone \!
+Now I added a new line!
+Added this line from the GitHub interface.
+=======
 
 
 **************************************
 This is the ending of testing.txt
 **************************************
+
