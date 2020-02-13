@@ -1,4 +1,5 @@
 import numpy as np
+
 def calculate_distance(rA, rB):
     """Calculate the distance between two points.
 
@@ -17,12 +18,14 @@ def calculate_distance(rA, rB):
     >>> r1 = np.array([0, 0, 0])
     >>> r2 = np.array([0, 0.1, 0])
     >>> calculate_distance(r1, r2)
-    0.1"""
+    0.1
+    """
 
     dist_vec = (rA - rB)
     distance = np.linalg.norm(dist_vec)
 
     return distance
+
 
 def calculate_angle(rA, rB, rC, degrees=False):
     AB = rB - rA
