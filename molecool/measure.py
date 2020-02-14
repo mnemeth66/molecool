@@ -21,6 +21,9 @@ def calculate_distance(rA, rB):
     0.1
     """
 
+    if not isinstance(rA, np.ndarray) or not isinstance(rB, np.ndarray):
+        raise TypeError("Input must be type np.ndarray!")
+
     dist_vec = (rA - rB)
     distance = np.linalg.norm(dist_vec)
 
@@ -28,6 +31,21 @@ def calculate_distance(rA, rB):
 
 
 def calculate_angle(rA, rB, rC, degrees=False):
+    """
+    Calculate the angle between three different points.
+
+    Parameters
+    ----------
+    rA, rB, rC : list
+    degrees : Boolean
+
+    Returns
+    ---------
+    theta : float
+        The angle. theta is in radians by default,
+        but is in degrees if the parameter degrees
+        is True.
+    """
     AB = rB - rA
     BC = rB - rC
     theta = np.arccos(np.dot(AB, BC) / (np.linalg.norm(AB) * np.linalg.norm(BC)))

@@ -14,3 +14,5 @@ dependencies:
   #- pip:
   #  - codecov
 
+script:
+  - pytest -v --cov=molssi_devops_2019 molssi_devops_2019/tests/
