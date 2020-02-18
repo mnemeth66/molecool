@@ -4,7 +4,7 @@ dependencies:
     # Base depends
   - python
   - pip
-	#Dependencies
+    # Dependencies
   - numpy
   - matplotlib
 
